@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'clipper.apps.ClipperConfig',
+    'funiWEB.clipper.apps.ClipperConfig',
 ]
 
 MIDDLEWARE = [
