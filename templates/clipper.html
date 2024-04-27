@@ -42,6 +42,7 @@
                 $('#clipper-form').on('submit', function (event) {
                     event.preventDefault();
                     var urlQuery = $('#url-input').val();
+                    var hashUrl = urlQuery.slice(32);
                     console.log(urlQuery)
     
                     $.ajax({
@@ -51,7 +52,26 @@
                         data: {'YTurl': urlQuery},
                         xhrFields: {responseType: 'blob'},
                         success: function (response) {
-                            console.log('request succesful')
+                                        // Create a Blob from the response data
+                            var blob = new Blob([response], {type: 'video/mp4'});
+
+                            // Create a URL for the Blob
+                            var url = window.URL.createObjectURL(blob);
+
+                            // Create an anchor element to trigger the download
+                            var a = document.createElement('a');
+                            a.href = url;
+                            a.download = `${hashUrl}.mp4`; // Specify the filename
+
+                            // Append the anchor element to the document body and trigger the click event
+                            document.body.appendChild(a);
+                            a.click();
+
+                            // Cleanup: Revoke the URL object to release the resources
+                            window.URL.revokeObjectURL(url);
+                        },
+                        error: function(xhr, status, error) {
+                            console.error('Error:', error);
                         }
                     });
                 });

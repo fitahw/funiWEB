@@ -39,9 +39,11 @@ def ajaxData(request):
                 print('Error in downloading video')
                 return JsonResponse({'success': False})
 
-            if os.path.exists(f'clips/{urlHash}.mp4'):
-                return FileResponse(open(f'clips/{urlHash}.mp4', 'rb'), as_attachment=True, filename=f'{urlHash}.mp4')
+            if os.path.exists(path):
+                print('Video already downloaded')
+                return FileResponse(open(path, 'rb'), as_attachment=True, filename=f'{urlHash}.mp4')
             else:
+                print('Video not downloaded')
                 return JsonResponse({'success': False})
     else:
         return JsonResponse({'success': False})
