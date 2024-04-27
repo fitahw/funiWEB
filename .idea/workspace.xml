@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b58bd4c1-0e03-4b91-980c-652d150bbc01" name="Changes" comment="working download through yt-dlp">
+    <list default="true" id="b58bd4c1-0e03-4b91-980c-652d150bbc01" name="Changes" comment="working website download for youtube URL">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funiWEB/clipper/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/funiWEB/clipper/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/clipper.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/clipper.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funiWEB/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/funiWEB/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +117,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714208814987</updated>
-      <workItem from="1714208815590" duration="25406000" />
+      <workItem from="1714208815590" duration="26006000" />
     </task>
     <task id="LOCAL-00001" summary="FIRST COMMIT">
       <option name="closed" value="true" />
@@ -169,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714241187015</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="working website download for youtube URL">
+      <option name="closed" value="true" />
+      <created>1714243197305</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1714243197305</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +200,7 @@
     <MESSAGE value="dir change" />
     <MESSAGE value="working HTML form with AJAX request (no submit button)" />
     <MESSAGE value="working download through yt-dlp" />
-    <option name="LAST_COMMIT_MESSAGE" value="working download through yt-dlp" />
+    <MESSAGE value="working website download for youtube URL" />
+    <option name="LAST_COMMIT_MESSAGE" value="working website download for youtube URL" />
   </component>
 </project>
