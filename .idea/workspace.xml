@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b58bd4c1-0e03-4b91-980c-652d150bbc01" name="Changes" comment="working website download for youtube URL">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b58bd4c1-0e03-4b91-980c-652d150bbc01" name="Changes" comment="allowed render to host website">
       <change beforePath="$PROJECT_DIR$/funiWEB/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/funiWEB/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +116,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714208814987</updated>
-      <workItem from="1714208815590" duration="26006000" />
+      <workItem from="1714208815590" duration="26360000" />
     </task>
     <task id="LOCAL-00001" summary="FIRST COMMIT">
       <option name="closed" value="true" />
@@ -175,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714243197305</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="allowed render to host website">
+      <option name="closed" value="true" />
+      <created>1714243800849</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1714243800849</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +208,7 @@
     <MESSAGE value="working HTML form with AJAX request (no submit button)" />
     <MESSAGE value="working download through yt-dlp" />
     <MESSAGE value="working website download for youtube URL" />
-    <option name="LAST_COMMIT_MESSAGE" value="working website download for youtube URL" />
+    <MESSAGE value="allowed render to host website" />
+    <option name="LAST_COMMIT_MESSAGE" value="allowed render to host website" />
   </component>
 </project>
