@@ -24,6 +24,7 @@ def ajaxData(request):
         ydl_opts = {
             'outtmpl': path,
             'format': 'b',
+            'verbose': True,
             # 'download_ranges': download_range_func(None, [(time1, time2)]),
             #'force_keyframes_at_cuts': True,
             'postprocessors': [{
