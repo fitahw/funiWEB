@@ -27,8 +27,14 @@
                         {% csrf_token %}
                         <label for="url">YouTube URL:</label><br>
                         <input type="text" id="url-input" name="url"><br>
+                        
+                        <label for="time1">CLIP start time</label><br>
+                        <input type="number" id="time1-input" name="time1" placeholder="(in seconds)"><br>
+                        
+                        <label for="time2">CLIP end time</label><br>
+                        <input type="number" id="time2-input" placeholder="(in seconds)"><br>
 
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Download">
                     </form>
                 </div>
             </div>
@@ -42,14 +48,20 @@
                 $('#clipper-form').on('submit', function (event) {
                     event.preventDefault();
                     var urlQuery = $('#url-input').val();
-                    var hashUrl = urlQuery.slice(32);
+                    var time1Query = $('#time1-input').val();
+                    var time2Query = $('#time2-input').val();
+                    var uqUrlQuery = urlQuery.slice(32);
                     console.log(urlQuery)
-    
+                    
                     $.ajax({
                         type: "POST",
                         headers: {'X-CSRFToken': CSRF},
                         url: "{% url 'ajaxData' %}",
-                        data: {'YTurl': urlQuery},
+                        data: {
+                            'YTurl': urlQuery,
+                            'uqURL': uqUrlQuery,
+                            'time1': time1Query,
+                            'time2': time2Query},
                         xhrFields: {responseType: 'blob'},
                         success: function (response) {
                                         // Create a Blob from the response data
@@ -61,7 +73,7 @@
                             // Create an anchor element to trigger the download
                             var a = document.createElement('a');
                             a.href = url;
-                            a.download = `${hashUrl}.mp4`; // Specify the filename
+                            a.download = `${uqUrl}.mp4`; // Specify the filename
 
                             // Append the anchor element to the document body and trigger the click event
                             document.body.appendChild(a);
@@ -70,7 +82,7 @@
                             // Cleanup: Revoke the URL object to release the resources
                             window.URL.revokeObjectURL(url);
                         },
-                        error: function(xhr, status, error) {
+                        error: function(status, error) {
                             console.error('Error:', error);
                         }
                     });

@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b58bd4c1-0e03-4b91-980c-652d150bbc01" name="Changes" comment="configured allowed hosts (again)">
+    <list default="true" id="b58bd4c1-0e03-4b91-980c-652d150bbc01" name="Changes" comment="verbose: True for yt-dlp for bugfixing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/funiWEB/clipper/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/funiWEB/clipper/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/clipper.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/clipper.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +120,8 @@
       <option name="presentableId" value="Default" />
       <updated>1714208814987</updated>
       <workItem from="1714208815590" duration="27025000" />
-      <workItem from="1714318440815" duration="1012000" />
+      <workItem from="1714318440815" duration="2270000" />
+      <workItem from="1714398233762" duration="4064000" />
     </task>
     <task id="LOCAL-00001" summary="FIRST COMMIT">
       <option name="closed" value="true" />
@@ -192,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714244180385</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="verbose: True for yt-dlp for bugfixing">
+      <option name="closed" value="true" />
+      <created>1714319733181</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1714319733181</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +231,7 @@
     <MESSAGE value="working website download for youtube URL" />
     <MESSAGE value="allowed render to host website" />
     <MESSAGE value="configured allowed hosts (again)" />
-    <option name="LAST_COMMIT_MESSAGE" value="configured allowed hosts (again)" />
+    <MESSAGE value="verbose: True for yt-dlp for bugfixing" />
+    <option name="LAST_COMMIT_MESSAGE" value="verbose: True for yt-dlp for bugfixing" />
   </component>
 </project>
