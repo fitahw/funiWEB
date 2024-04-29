@@ -13,6 +13,11 @@ def index(request):
     return render(request, 'clipper.html')
 
 @multitasking.task
+def deleteClip(path):
+    time.sleep(380)
+    os.remove(path)
+
+@multitasking.task
 def ajaxData(request):
     if request.method == "POST":
         url = request.POST.get('YTurl')
@@ -20,11 +25,8 @@ def ajaxData(request):
         time1 = request.POST.get('time1')
         time2 = request.POST.get('time2')
         path = f'clips/{urlHash}.mp4'
-        @multitasking.task
-        def deleteClip():
-            time.sleep(380)
-            os.remove(path)
 
+        deleteClip(path)
         ''''
         with yt_dlp.YoutubeDL() as ydl:
             info_dict = ydl.extract_info(url, download=False)
